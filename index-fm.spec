@@ -20,6 +20,7 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5Attica)
+BuildRequires:	cmake(MauiKit)
 
 %description
 File manager for Plasma Mobile
