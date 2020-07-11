@@ -1,11 +1,15 @@
-%define snapshot 20200312
-%define commit 295eb66010df1361349f72fdb96353125acfb52c
+#define snapshot 20200312
+#define commit 295eb66010df1361349f72fdb96353125acfb52c
 
 Name:		index-fm
-Version:	0.0
-Release:	0.%{snapshot}.1
+Version:	1.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
+%if 0%{?snapshot:1}
 Source0:	https://invent.kde.org/kde/index-fm/-/archive/master/index-fm-%{snapshot}.tar.bz2
+%else
+Source0:	https://invent.kde.org/maui/index-fm/-/archive/v%{version}/index-fm-v%{version}.tar.bz2
+%endif
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
@@ -26,7 +30,11 @@ BuildRequires:	cmake(MauiKit)
 File manager for Plasma Mobile
 
 %prep
+%if 0%{?snapshot:1}
 %autosetup -p1 -n %{name}-master-%{commit}
+%else
+%autosetup -p1 -n %{name}-v%{version}
+%endif
 %cmake_kde5 -G Ninja
 
 %build
