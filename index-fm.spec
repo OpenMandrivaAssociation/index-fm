@@ -2,7 +2,7 @@
 #define commit 295eb66010df1361349f72fdb96353125acfb52c
 
 Name:		index-fm
-Version:	1.1.1
+Version:	1.2.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
 %if 0%{?snapshot:1}
