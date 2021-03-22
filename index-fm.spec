@@ -48,3 +48,4 @@ File manager for Plasma Mobile
 %{_bindir}/index
 %{_datadir}/applications/org.kde.index.desktop
 %{_datadir}/icons/hicolor/*/*/*
+%{_datadir}/metainfo/org.kde.index.appdata.xml
