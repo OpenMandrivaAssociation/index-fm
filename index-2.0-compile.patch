@@ -1,0 +1,12 @@
+diff -up index-fm-v2.0/src/index.cpp.omv~ index-fm-v2.0/src/index.cpp
+--- index-fm-v2.0/src/index.cpp.omv~	2021-08-04 02:52:36.314214745 +0200
++++ index-fm-v2.0/src/index.cpp	2021-08-04 02:52:43.252253899 +0200
+@@ -33,7 +33,7 @@ void Index::openPaths(const QStringList
+                                 }
+                                 else
+                                 {
+-                                    list <<  FMStatic::fileDir(url).toString();
++                                    list <<  FMStatic::fileDir(url);
+                                 }
+                             }
+ 
