@@ -5,7 +5,7 @@
 %global optflags %{optflags} -isystem %{_includedir}/KF5/KIOFileWidgets -isystem %{_includedir}/KF5/KBookmarks -isystem %{_includedir}/qt5/QtXml -isystem %{_includedir}/KF5/Solid
 
 Name:		index-fm
-Version:	2.0
+Version:	2.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
 Source0:	https://invent.kde.org/maui/index-fm/-/archive/v%{version}/index-fm-v%{version}.tar.bz2
