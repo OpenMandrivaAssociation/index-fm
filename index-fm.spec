@@ -9,7 +9,7 @@ Version:	2.1.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
 Source0:	https://invent.kde.org/maui/index-fm/-/archive/v%{version}/index-fm-v%{version}.tar.bz2
-Patch0:		index-2.0-compile.patch
+#Patch0:		index-2.0-compile.patch
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
