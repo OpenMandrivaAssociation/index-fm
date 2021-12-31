@@ -8,6 +8,7 @@ Name:		index-fm
 Version:	2.1.0
 Release:	%{?snapshot:0.%{snapshot}.}2
 Summary:	File manager for Plasma Mobile
+URL:    	https://mauikit.org
 Source0:	https://invent.kde.org/maui/index-fm/-/archive/v%{version}/index-fm-v%{version}.tar.bz2
 Patch0:		index-fm-kio-5.89.patch
 License:	GPLv3
