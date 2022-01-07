@@ -1,15 +1,13 @@
-#define snapshot 20200312
-#define commit 295eb66010df1361349f72fdb96353125acfb52c
+%define snapshot 20220107
 
 # index-fm's build system seems to miss various library headers for some reason
 %global optflags %{optflags} -isystem %{_includedir}/KF5/KIOFileWidgets -isystem %{_includedir}/KF5/KBookmarks -isystem %{_includedir}/qt5/QtXml -isystem %{_includedir}/KF5/Solid
 
 Name:		index-fm
-Version:	2.1.0
-Release:	%{?snapshot:0.%{snapshot}.}2
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
-Source0:	https://invent.kde.org/maui/index-fm/-/archive/v%{version}/index-fm-v%{version}.tar.bz2
-Patch0:		index-fm-kio-5.89.patch
+Source0:	https://invent.kde.org/maui/index-fm/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/index-fm-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/index-fm-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Applications/Productivity
 BuildRequires:	cmake
@@ -34,11 +32,7 @@ BuildRequires:  cmake(MauiKitFileBrowsing)
 File manager for Plasma Mobile
 
 %prep
-%if 0%{?snapshot:1}
-%autosetup -p1 -n %{name}-master-%{commit}
-%else
-%autosetup -p1 -n %{name}-v%{version}
-%endif
+%autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5 -G Ninja
 
 %build
