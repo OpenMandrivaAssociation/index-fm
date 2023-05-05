@@ -45,7 +45,9 @@ File manager for Plasma Mobile
 %install
 %ninja_install -C build
 
-%files
+%find_lang index-fm
+
+%files -f index-fm.lang
 %{_bindir}/index
 %{_datadir}/applications/org.kde.index.desktop
 %{_datadir}/icons/hicolor/*/*/*
