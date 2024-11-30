@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 # index-fm's build system seems to miss various library headers for some reason
-%global optflags %{optflags} -isystem %{_includedir}/KF5/KIOFileWidgets -isystem %{_includedir}/KF5/KBookmarks -isystem %{_includedir}/qt5/QtXml -isystem %{_includedir}/KF5/Solid
+%global optflags %{optflags} -isystem %{_includedir}/KF6/KIOFileWidgets -isystem %{_includedir}/KF6/KBookmarks -isystem %{_includedir}/qt6/QtXml -isystem %{_includedir}/KF6/Solid
 
 Name:		index-fm
 Version:	4.0.0
@@ -53,4 +53,4 @@ File manager for Plasma Mobile
 %{_datadir}/applications/org.kde.index.desktop
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/metainfo/org.kde.index.appdata.xml
-%{_datadir}/knotifications5/org.kde.index.notifyrc
+#{_datadir}/knotifications5/org.kde.index.notifyrc
