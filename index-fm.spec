@@ -4,7 +4,7 @@
 %global optflags %{optflags} -isystem %{_includedir}/KF5/KIOFileWidgets -isystem %{_includedir}/KF5/KBookmarks -isystem %{_includedir}/qt5/QtXml -isystem %{_includedir}/KF5/Solid
 
 Name:		index-fm
-Version:	3.1.0
+Version:	4.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
 URL:    	https://mauikit.org
@@ -14,23 +14,23 @@ Group:		Applications/Productivity
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:  cmake(Qt5DBus)
-BuildRequires:	cmake(Qt5Qml)
-BuildRequires:	cmake(Qt5Quick)
-BuildRequires:	cmake(Qt5Sql)
-BuildRequires:	cmake(Qt5Svg)
-BuildRequires:	cmake(Qt5QuickControls2)
-BuildRequires:	cmake(Qt5Xml)
-BuildRequires:	cmake(Qt5Widgets)
-BuildRequires:	cmake(KF5I18n)
-BuildRequires:	cmake(KF5Notifications)
-BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5Attica)
-BuildRequires:	cmake(KF5Archive)
-BuildRequires:	cmake(KF5Bookmarks)
-BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(MauiKit3)
-BuildRequires:  cmake(MauiKitFileBrowsing3)
+BuildRequires:  cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Qml)
+BuildRequires:	cmake(Qt6Quick)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:	cmake(Qt6QuickControls2)
+BuildRequires:	cmake(Qt6Xml)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(KF6I18n)
+BuildRequires:	cmake(KF6Notifications)
+BuildRequires:	cmake(KF6KIO)
+BuildRequires:	cmake(KF6Attica)
+BuildRequires:	cmake(KF6Archive)
+BuildRequires:	cmake(KF6Bookmarks)
+BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(MauiKit4)
+BuildRequires:  cmake(MauiKitFileBrowsing4)
 
 %description
 File manager for Plasma Mobile
