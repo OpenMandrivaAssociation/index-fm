@@ -53,4 +53,4 @@ File manager for Plasma Mobile
 %{_datadir}/applications/org.kde.index.desktop
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/metainfo/org.kde.index.appdata.xml
-#{_datadir}/knotifications5/org.kde.index.notifyrc
+%{_datadir}/knotifications6/org.kde.index.notifyrc
