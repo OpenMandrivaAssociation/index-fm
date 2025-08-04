@@ -4,7 +4,7 @@
 %global optflags %{optflags} -isystem %{_includedir}/KF6/KIOFileWidgets -isystem %{_includedir}/KF6/KBookmarks -isystem %{_includedir}/qt6/QtXml -isystem %{_includedir}/KF6/Solid
 
 Name:		index-fm
-Version:	4.0.1
+Version:	4.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	File manager for Plasma Mobile
 URL:    	https://mauikit.org
